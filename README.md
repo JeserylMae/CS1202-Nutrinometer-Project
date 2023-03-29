@@ -1,7 +1,9 @@
 ###### CS1202 CS121 PROJECT
+
 <p align="center">
-<img src="https://www.clipartkey.com/mpngs/m/14-148392_healthy-food-cartoon-cartoon-healthy-food-junk-food.png" width="25%" />
+<img src="https://media.istockphoto.com/id/1132459459/vector/isometric-vector-of-a-nutrition-app-showing-nutrition-facts-and-assisting-in-calories-count.jpg?s=170667a&w=0&k=20&c=vgjj8pX9HajHnRRmMhD98Cx2LWzpqnSkb8vbCnDSExc=" width="100%" />
 </p>
+
 <h1 align="center"> NUTRINOMETER </h1>
 <h3 align="center"> A Python-based Program to Monitor Your Daily Food Intake. </h3>
 
@@ -22,8 +24,9 @@
   </ul>
 </p>
 
-#### Purpose:
-<p>This program will be a food intake tracker that will allow users to input the foods they eat throughout the day and track their calorie intake. The program will also provide users with recommendations for healthier food choices based on their dietary needs.</p>
+| Purpose: |              |
+| -------- |:------------:|
+| <p align="center"><img src="https://www.clipartkey.com/mpngs/m/14-148392_healthy-food-cartoon-cartoon-healthy-food-junk-food.png" width="85%" /></p> | <p>This program will be a food intake tracker that will allow users to input the foods they eat throughout the day and track their calorie intake. The program will also provide users with recommendations for healthier food choices based on their dietary needs.</p> |
 
 ---
 
