@@ -6,6 +6,7 @@
 
 <h1 align="center"> NUTRINOMETER </h1>
 <h3 align="center"> A Python-based Program to Monitor Your Daily Food Intake. </h3>
+<h4 align='center'> By Reina Liz Armedilla, Chustine Mae  Cantal, Jeseryl Mae  Comia, Stephanie  Perez </h4>
 
 ---
 
@@ -32,8 +33,3 @@
 
 ---
 
-#### Team Members:
-Armedilla, Reina Liz <br>
-Cantal, Chustine Mae <br>
-Comia, Jeseryl Mae <br>
-Perez, Stephanie <br>
