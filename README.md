@@ -14,13 +14,15 @@
 
 <p> Features:
 <ul>
-<li>User Registration: The user will be required to create an account with a username and password to access the program. </li>
-<li>Food Input: The program will allow users to input the foods they eat and the portion size.</li>
-<li>Calorie Calculator: The program will calculate the total calorie intake for the day based on the foods entered. <br></li>
-<li>Dietary Needs: Users will be able to input their dietary needs such as vegan, gluten-free, etc., and the program will provide recommendations for healthier food choices based on their needs.<br></li>
-<li>Daily/Weekly/Monthly Reports: The program will generate reports to show the user's daily, weekly, and monthly food intake.</li>
+<li><strong>User Registration: </strong> The user will be required to create an account with a username and password to access the program. </li>
+<li><strong>Food Input: </strong> The program will allow users to input the foods they eat and the portion size.</li>
+<li><strong>Calorie Calculator: </strong> The program will calculate the total calorie intake for the day based on the foods entered. <br></li>
+<li><strong>Dietary Needs: </strong> Users will be able to input their dietary needs such as vegan, gluten-free, etc., and the program will provide recommendations for healthier food choices based on their needs.<br></li>
+<li><strong>Daily/Weekly/Monthly Reports: </strong> The program will generate reports to show the user's daily, weekly, and monthly food intake.</li>
   </ul>
 </p>
 
 #### Purpose:
 <p>This program will be a food intake tracker that will allow users to input the foods they eat throughout the day and track their calorie intake. The program will also provide users with recommendations for healthier food choices based on their dietary needs.</p>
+
+
