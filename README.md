@@ -25,4 +25,10 @@
 #### Purpose:
 <p>This program will be a food intake tracker that will allow users to input the foods they eat throughout the day and track their calorie intake. The program will also provide users with recommendations for healthier food choices based on their dietary needs.</p>
 
-
+##### Team Members:
+  <ul style = "list-style-type: square;">
+  <li>Chustine Mae Cantal</li>
+  <li>Jeseryl Mae Comia</li>
+  <li>Reina Liz Armedilla</li>
+  <li>Stephanie Perez</li>
+</ul>
