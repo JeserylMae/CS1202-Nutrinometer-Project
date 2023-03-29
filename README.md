@@ -1,6 +1,7 @@
 ###### CS1202 CS121 PROJECT 
-
-# NUTRINOMETER
+<p align="center">
+<h1 style= "font-family: Gothic; "> NUTRINOMETER </h1>
+</p>
 ##### A Python-based Program to Monitor Your Daily Food Intake.
 
 ---
