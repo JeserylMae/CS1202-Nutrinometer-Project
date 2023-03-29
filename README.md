@@ -32,10 +32,8 @@
 
 ---
 
-##### Team Members:
-  <ul style = "list-style-type: square;">
-  <li>Chustine Mae Cantal</li>
-  <li>Jeseryl Mae Comia</li>
-  <li>Reina Liz Armedilla</li>
-  <li>Stephanie Perez</li>
-</ul>
+#### Team Members:
+Armedilla, Reina Liz <br>
+Cantal, Chustine Mae <br>
+Comia, Jeseryl Mae <br>
+Perez, Stephanie <br>
