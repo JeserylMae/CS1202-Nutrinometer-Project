@@ -32,8 +32,6 @@
 
 ---
 
-<br>
-
 ##### Team Members:
   <ul style = "list-style-type: square;">
   <li>Chustine Mae Cantal</li>
