@@ -12,7 +12,7 @@
 
 <p> Nutrinometer is a program designed to assess user’s daily nutrient intake. It is aligned to Sustainable Development Goal 3 (SDG3) called “Good Health And Well-Being”. This program will indicate the nutrients found in the food the user has consumed and will provide analysis whether they had attained the advisable amount of daily nutrient intake. </p>
 
-<p> Features:
+<p> <strong>Features: </strong>
 <ul>
 <li><strong>👩‍💻User Registration: </strong> The user will be required to create an account with a username and password to access the program. </li>
 <li><strong>🍴Food Input: </strong> The program will allow users to input the foods they eat and the portion size.</li>
