@@ -3,7 +3,7 @@
 <img src="https://www.clipartkey.com/mpngs/m/14-148392_healthy-food-cartoon-cartoon-healthy-food-junk-food.png" width="25%" />
 </p>
 <h1 align="center"> NUTRINOMETER </h1>
-<h5 align="center"> A Python-based Program to Monitor Your Daily Food Intake. </h5>
+<h3 align="center"> A Python-based Program to Monitor Your Daily Food Intake. </h3>
 
 ---
 
