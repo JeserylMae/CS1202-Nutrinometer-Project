@@ -1,4 +1,4 @@
-###### CS1202 CS121 PROJECT 
+###### CS1202 CS121 PROJECT
 <p align="center">
 <img src="https://www.clipartkey.com/mpngs/m/14-148392_healthy-food-cartoon-cartoon-healthy-food-junk-food.png" width="25%" />
 </p>
@@ -14,11 +14,11 @@
 
 <p> Features:
 <ul>
-<li><strong>User Registration: </strong> The user will be required to create an account with a username and password to access the program. </li>
-<li><strong>Food Input: </strong> The program will allow users to input the foods they eat and the portion size.</li>
-<li><strong>Calorie Calculator: </strong> The program will calculate the total calorie intake for the day based on the foods entered. <br></li>
-<li><strong>Dietary Needs: </strong> Users will be able to input their dietary needs such as vegan, gluten-free, etc., and the program will provide recommendations for healthier food choices based on their needs.<br></li>
-<li><strong>Daily/Weekly/Monthly Reports: </strong> The program will generate reports to show the user's daily, weekly, and monthly food intake.</li>
+<li><strong>👩‍💻User Registration: </strong> The user will be required to create an account with a username and password to access the program. </li>
+<li><strong>🍴Food Input: </strong> The program will allow users to input the foods they eat and the portion size.</li>
+<li><strong>📲Calorie Calculator: </strong> The program will calculate the total calorie intake for the day based on the foods entered. <br></li>
+<li><strong>🥕Dietary Needs: </strong> Users will be able to input their dietary needs such as vegan, gluten-free, etc., and the program will provide recommendations for healthier food choices based on their needs.<br></li>
+<li><strong>📊Daily/Weekly/Monthly Reports: </strong> The program will generate reports to show the user's daily, weekly, and monthly food intake.</li>
   </ul>
 </p>
 
