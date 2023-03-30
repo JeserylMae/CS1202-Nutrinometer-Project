@@ -32,4 +32,8 @@
 | <p align="center"><img src="https://www.clipartkey.com/mpngs/m/14-148392_healthy-food-cartoon-cartoon-healthy-food-junk-food.png" width="85%" /></p> | <p align="justify">This program will be a food intake tracker that will allow users to input the foods they eat throughout the day and track their calorie intake. The program will also provide users with recommendations for healthier food choices based on their dietary needs.</p><p align="justify">Overall, the objective of this program is to help users develop a better understanding of their eating habits and make more informed choices about their diet. By providing accurate and detailed information about the foods they consume, users can make healthier choices and work towards achieving their nutritional goals.</p> |
 
 ---
+22-06939@g.batstate-u.edu.ph
+22-06033@g.batstate-u.edu.ph
+22-03496@g.bastate-u.edu.ph
+22-05252@g.batstae-u.edu.ph
 
