@@ -1,4 +1,5 @@
-[![alt text here](/picture1.jpg)](https://media.istockphoto.com/id/1132459459/vector/isometric-vector-of-a-nutrition-app-showing-nutrition-facts-and-assisting-in-calories-count.jpg?s=170667a&w=0&k=20&c=vgjj8pX9HajHnRRmMhD98Cx2LWzpqnSkb8vbCnDSExc=)
+<p align="center">
+<img src="https://media.istockphoto.com/id/1132459459/vector/isometric-vector-of-a-nutrition-app-showing-nutrition-facts-and-assisting-in-calories-count.jpg?s=170667a&w=0&k=20&c=vgjj8pX9HajHnRRmMhD98Cx2LWzpqnSkb8vbCnDSExc=" />
 
 <h1 align="center"><strong> NUTRINOMETER </strong></h1>
 <h3 align="center"> A Python-based Program to Monitor Your Daily Food Intake. </h3>
