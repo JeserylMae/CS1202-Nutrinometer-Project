@@ -14,7 +14,7 @@
 <p align="justify">Altogether, the Nutrinometer Program can help promote Sustainable Development Goal 3 by encouraging healthy eating habits, reducing the risk of non-communicable diseases, and providing personalized recommendations for achieving health and nutritional goals.</p>
 
 **_Features:_**
-- **👩‍💻User Registration:** The user will be required to create an account with a username and password to access the program.
+
 - **🍴Food Input:** The program will allow users to input the foods they eat and the portion size.
 - **📲Calorie Calculator:** The program will calculate the total calorie intake for the day based on the foods entered. 
 - **🥕Dietary Needs:** Users will be able to input their dietary needs such as vegan, gluten-free, etc., and the program will provide recommendations for healthier food choices based on their needs.<br></li>
