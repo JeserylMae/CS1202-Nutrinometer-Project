@@ -9,7 +9,7 @@ to download customtkinter,
 
 To download Pillow,
     - go to your terminal or Command Prompt, then type...
-        pip intall Pillow
+        pip install Pillow
     - then hit enter. 
 """
 
