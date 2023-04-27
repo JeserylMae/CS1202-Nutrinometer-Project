@@ -1,3 +1,35 @@
+choice = input("Enter 1 to create a new account or 2 to log in: ")
+
+if choice == "1":
+    name = input("Enter your name: ")
+    email = input("Enter your email: ")
+    password = input("Enter your password: ")
+    confPassword = input("Confirm password: ")
+
+    if password == confPassword:
+        print("User accepted!")
+        with open("user_info.txt", "a") as file:
+            file.write(f"{name},{email},{password}\n")
+
+        print("User information saved successfully!")
+    else:
+        print("Invalid password combination")
+
+elif choice == "2":
+    email = input("Enter your email: ")
+    password = input("Enter your password: ")
+
+    with open("user_info.txt", "r") as file:
+        found_user = False
+        for line in file:
+            user_info = line.strip().split(",")
+            if len(user_info) >= 3 and user_info[1] == email and user_info[2] == password:
+                found_user = True
+                print(f"Welcome back, {user_info[0]}!")
+                break
+
+        if not found_user:
+            print("Invalid email or password. Please try again.")
 import os
 import pickle
 
