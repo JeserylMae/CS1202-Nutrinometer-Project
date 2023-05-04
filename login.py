@@ -1,7 +1,7 @@
 """
 LOG-IN PAGE CODE
 
-install pyfiglet & rich
+install pyfiglet 
 """
 
 import os # for clear screen
