@@ -1,7 +1,6 @@
 """
 LOG-IN PAGE CODE
 
-install pyfiglet & rich
 """
 
 import os
