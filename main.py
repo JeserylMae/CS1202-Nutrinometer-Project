@@ -100,12 +100,3 @@ except:
     month = [[], [], [], []]
 
 main()
-
-# ang normal calorie intake daw ata ay nasa 2000+ per day sabi ni google kaya pag irrun nyo yung code gawin nyong nasa 4digits ang input
-# magugulo kasi ang table pag nilagyan nyo ng 1 or 2 digits yan HAHAHAHAH
-
-# tinry ko nga pala ako gawin yung user registration feature natin parang keri naman sya. idagdag ko nalang dito pag goods na
-
-# bale itong code pala natin ay meron ng 3 features(?) pero aayusin padin natin HAHAHA tas pang apat na feature na natin yung sa user registration
-# kulang pa tayo ng dietary needs
-# mag meet na din siguro talaga tayo habang nagawa dito sa pycharm para makapag usap ng ayos HAHAHAHA
