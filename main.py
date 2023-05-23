@@ -18,6 +18,17 @@ class Nutrinometer:
         else:
             print("Numbers only please")
             return self.getCalories(question)
+        
+         ###def getFoodIntake(self):
+        food_intake = {}
+        print("Please enter your food intake for the day")
+        while True:
+            food = input("Food: ")
+            if not food:
+                break
+            portion_size = self.getCalories("Portion size (calories): ")
+            food_intake[food] = portion_size
+        return food_intake###
 
     def getAweek(self):
         os.system("cls" if os.name == "nt" else "clear")
