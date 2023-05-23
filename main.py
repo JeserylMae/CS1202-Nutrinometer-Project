@@ -39,6 +39,21 @@ class Nutrinometer:
             food_intake = self.getFoodIntake(day)
             total_calories = sum(food_intake.values())
             week.append(total_calories)
+
+        total = sum(week)
+        average = int(total / 7)
+
+        print("\n\nYour total calorie intake for the week:", total)
+        print("Your average calorie intake for the week:", average)
+
+        if total > 21000:
+            print("\nYou are eating too many calories. Recommendations: [Add recommendations here]")
+        elif total < 9000:
+            print("\nYou are eating far too few calories. Recommendations: [Add recommendations here]")
+        else:
+            print("\nYou have a normal calorie intake. Keep up the good work!")
+
+        input("Press Enter to continue")
         return week
 
     def create_new_account(self):
