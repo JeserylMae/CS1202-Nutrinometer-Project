@@ -47,9 +47,9 @@ class Nutrinometer:
         print("Your average calorie intake for the week:", average)
 
         if total > 21000:
-            print("\nYou are eating too many calories. Recommendations: [Add recommendations here]")
+            print("\nYou are eating too many calories. \nRecommendations: [Add recommendations here]")
         elif total < 9000:
-            print("\nYou are eating far too few calories. Recommendations: [Add recommendations here]")
+            print("\nYou are eating far too few calories. \nRecommendations: [Add recommendations here]")
         else:
             print("\nYou have a normal calorie intake. Keep up the good work!")
 
