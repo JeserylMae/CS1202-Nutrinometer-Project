@@ -19,12 +19,12 @@ class Nutrinometer:
             print("Numbers only please")
             return self.getCalories(question)
 
-    def getFoodIntake(self, day):
+     def getFoodIntake(self, day):
         food_intake = {}
         print(f"\nPlease enter your food intake for {day}:")
         while True:
-            food = input("Food (enter 'done' to finish): ")
-            if food.lower() == "done" or not food:
+            food = input("Food (Press Enter to finish): ")
+            if not food:
                 break
             portion_size = self.getCalories("Portion size (calories): ")
             food_intake[food] = portion_size
