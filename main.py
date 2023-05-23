@@ -19,9 +19,9 @@ class Nutrinometer:
             print("Numbers only please")
             return self.getCalories(question)
 
-    def getFoodIntake(self):
+    def getFoodIntake(self, day):
         food_intake = {}
-        print("Please enter your food intake for the day")
+        print(f"\nPlease enter your food intake for {day}:")
         while True:
             food = input("Food (enter 'done' to finish): ")
             if food.lower() == "done" or not food:
@@ -33,10 +33,11 @@ class Nutrinometer:
     def getAweek(self):
         os.system("cls" if os.name == "nt" else "clear")
         print("Please enter your calories for the last 7 days")
+        days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
         week = []
-        for i in range(7):
-            day = self.getFoodIntake()
-            total_calories = sum(day.values())
+        for day in days_of_week:
+            food_intake = self.getFoodIntake(day)
+            total_calories = sum(food_intake.values())
             week.append(total_calories)
         return week
 
