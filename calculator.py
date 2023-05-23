@@ -44,7 +44,7 @@ print("Your daily calorie needs are: ", calories)
 
 def Get_NormRequired():
     if answer > calories:
-        print("\nYou are eating too many calories.")
+        print("\nYou are eating too many calories. \nRecommendation: Watch your portion size and count the calories intake.")
     elif answer == calories:
         print("\nYou're at the right amount of calories. ")
     else:
