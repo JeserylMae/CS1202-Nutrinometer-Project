@@ -19,7 +19,7 @@ class Nutrinometer:
             print("Numbers only please")
             return self.getCalories(question)
 
-     def getFoodIntake(self, day):
+    def getFoodIntake(self, day):
         food_intake = {}
         print(f"\nPlease enter your food intake for {day}:")
         while True:
@@ -112,9 +112,9 @@ class Nutrinometer:
 
         while True:
             try:
-                weeknum = int(input("\n\nWhich week would you like to edit the values for? (1,2,3,4)"))
-                if 1 <= weeknum <= 4:
-                    self.user_data['month'][weeknum - 1] = self.getAweek()
+                week_num = int(input("\n\nWhich week would you like to edit the values for? (1-4)"))
+                if 1 <= week_num <= 4:
+                    self.user_data['month'][week_num - 1] = self.getAweek()
                     with open(f"{self.user_data['email']}.p", "wb") as file:
                         pickle.dump(self.user_data, file)
                     break
