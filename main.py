@@ -18,37 +18,26 @@ class Nutrinometer:
         else:
             print("Numbers only please")
             return self.getCalories(question)
-        
-         ###def getFoodIntake(self):
+
+    def getFoodIntake(self):
         food_intake = {}
         print("Please enter your food intake for the day")
         while True:
-            food = input("Food: ")
-            if not food:
+            food = input("Food (enter 'done' to finish): ")
+            if food.lower() == "done" or not food:
                 break
             portion_size = self.getCalories("Portion size (calories): ")
             food_intake[food] = portion_size
-        return food_intake###
+        return food_intake
 
     def getAweek(self):
         os.system("cls" if os.name == "nt" else "clear")
         print("Please enter your calories for the last 7 days")
         week = []
         for i in range(7):
-            day = self.getCalories(question="Day " + str(i + 1) + ":")
-            week.append(day)
-
-        total = sum(week)
-        average = int(total / 7)
-
-        print("\n\nYour total calorie intake for the week:", total)
-        print("Your average calorie intake for the week:", average)
-
-        if total > 21000:
-            print("\nYou are eating too many calories.")
-        elif total < 9000:
-            print("\nYou are eating far too few calories.")
-        input("Press enter to continue")
+            day = self.getFoodIntake()
+            total_calories = sum(day.values())
+            week.append(total_calories)
         return week
 
     def create_new_account(self):
