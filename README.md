@@ -16,7 +16,7 @@
 - **_🥕Dietary Needs:_** Users will be able to input their dietary needs such as vegan, gluten-free, etc., and the program will provide recommendations for healthier food choices based on their needs.<br></li>
 - **_📊Daily/Weekly/Monthly Reports:_** The program will generate reports to show the user's daily, weekly, and monthly food intake.
 
-|<h2><strong>Purpose:|              |
+|<h3><strong>Purpose:|              |
 | -------- |:------------:|
 | <p align="center"><img src="https://www.clipartkey.com/mpngs/m/14-148392_healthy-food-cartoon-cartoon-healthy-food-junk-food.png" width="85%" /></p> | <p align="justify">This program will be a food intake tracker that will allow users to input the foods they eat throughout the day and track their calorie intake. The program will also provide users with recommendations for healthier food choices based on their dietary needs.</p><p align="justify">Overall, the objective of this program is to help users develop a better understanding of their eating habits and make more informed choices about their diet. By providing accurate and detailed information about the foods they consume, users can make healthier choices and work towards achieving their nutritional goals.</p> |
 ---
