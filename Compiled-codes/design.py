@@ -4,8 +4,8 @@
 
 """
 
-# Ansi color codes.
-class Colors():
+# This class contains the Ansi color codes which will change the color of the text once this class was called.
+class Colors(): 
     cyan = '\033[0;96m'
     red = '\033[0;31m'
 
