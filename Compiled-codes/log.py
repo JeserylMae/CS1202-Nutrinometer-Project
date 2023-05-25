@@ -1,19 +1,28 @@
 
-import os
-from tabulate import tabulate
-from design import *
-from calc import *
+"""
+    LOG-IN PAGE
+"""
 
-# create a text file named user_list2.txt
-file = open("user_list2.txt", "a")
-file.close()
+import os # for clearing screen.
+from tabulate import tabulate # this is not a built-in module, it is used to create a tabular presentation of datas.
+from design import * # in order to use the defined functions from design.py, it is necessary to import it.
+from calc import * # in order to use the defined functions from calc.py, it is necessary to import it.
 
-user_list = [] 
+# create a text file named user_list2.txt, this will store all the username and password of all user's 
+# who will sign-in to the program.
+file = open("user_list2.txt", "a") # as soon as the program was run, a txt file named user_list2 will be created.
+file.close() # closing the file.
+
+
 # creating list of active usernames.
 user_list = []
-with open("user_list2.txt", "r") as file:
-    user_list = file.read().split()
-
+# opening the file in read mode, since we're only going to read its content and not write to it.
+with open("user_list2.txt", "r") as file: 
+    user_list = file.read().split() # puttting the contents of the txt file into the list user_list.
+    # .read() function will read through the txt file's contents.
+    # .split will separate the contents of the txt file whenever it encounters white spaces.
+    
+# this is the main class.
 class User():
     # Declaring variables inside class User.
     def __init__(self, un, pw):
@@ -21,16 +30,15 @@ class User():
         self.pw = pw
 
     # open/create txt file w/ user's name as filename.
-    def user_account(self):
-        account = open(f"{self.un}.txt", "a") 
+    def user_account(self): # defining a function user_account() with self as its parameter.
+        account = open(f"{self.un}.txt", "a") # once the user signed-in or logged-in 
+        # this txt file will be automatically opened, whether it exist or not.
         account.close()
 
-    def user_kcal(self):
-        with open(f"{self.un}.txt", "r") as file:
-            pass
-
-class New_user(User):
-    # inheriting class User's variables
+# Creating class for new users.
+class New_user(User): # this inherits all the attributes and methods the class User have.
+    
+    # inheriting class User's attributes.
     def __init__(self, un, pw): 
         super().__init__(un, pw)
 
@@ -40,17 +48,21 @@ class New_user(User):
         with open("user_list2.txt", "a") as file: # open a file called user_list.txt to append infos in it.
             file.write(f"{self.un} {self.pw}\n") # saving self.un and self.pw inside user_list.txt.
     
+# Creating class for the home page.
+class Homepage(User): # this inherits all the attributes and methods the class User have.
+    
+    # inheriting class User's attributes.
+    def __init__(self, un, pw=None): # since we don't need the user's password in this class, 
+        # we set it to None, so it wouldn't ask for value of pw once it's called.
+         super().__init__(un, pw) 
 
-class Homepage(User):
-    def __init__(self, un, pw=None):
-         super().__init__(un, pw)
+    # this function creates the table presented in the homepage and view record page.
+    def table_r(self, n=int): 
+        print(homepage_h) # printing homepage header, this is from design.py.
 
-    def table_r(self, n=int):
-        print(homepage_h)
-
-        with open(f"{self.un}.txt", "r") as file:
-            lines = file.readlines() # lines is a list
-            lines = sorted(lines)
+        with open(f"{self.un}.txt", "r") as file: # opening txt.file with User's username as filename.
+            lines = file.readlines() # lines is a list which will store all the contents of the txt file.
+            lines = sorted(lines) # arranging all the conents chrnologically.
 
         # Defining list line and list y.
         # list line will store the values stored in lines separated by '|'
@@ -58,20 +70,21 @@ class Homepage(User):
         # list y will stored tabulated values of line.
         y = [] 
 
-        if n == 1:
-            print(homepage_m)
+        # n is a code here which says whether it is the homepage or view record page.
+        if n == 1: # if n = 1 then it is the homepage.
+            print(homepage_m) # printing homepage header from designs.py
             # Since the targeted number of rows to be presented in Recent Records is 
-            # a max of 7 rows we need to set range of rows.
-            if len(lines) <= 3: # here if length of lines is below 7, the range will up to the length of lines.
-                m = -(len(lines))
-            else:
-                m = -4 # however if length of lines is greater than 7, the range = 7.
-        else:
-            print(view_page)
-            m = -(len(lines))
+            # a max of 4 rows we need to set range of rows.
+            if len(lines) <= 3: # here if length of lines is below 3, the range will be equal to the length of lines.
+                m = -(len(lines)) # m is negative because we want to read the contents of the list from the end.
+            else: 
+                m = -4 # however if length of lines is greater than 3, the range = 4.
+        else: # this is for the View all Record page.
+            print(view_page) # this is the header for view page, from design.py
+            m = -(len(lines)) # since we want to view all records, then m should be equal to the number of lines of the list.
 
-        #adding values to list line.
-        if len(lines) != 0:
+        # adding values to list line.
+        if len(lines) != 0: 
             for i in range(m, 0):
                 line.append(lines[i].rstrip('\n').split(" | "))
             t = tabulate(line, headers="firstrow", tablefmt="fancy_grid", stralign="center", numalign="center", missingval=" ", maxcolwidths=15)
