@@ -84,43 +84,51 @@ class Homepage(User): # this inherits all the attributes and methods the class U
             m = -(len(lines)) # since we want to view all records, then m should be equal to the number of lines of the list.
 
         # adding values to list line.
-        if len(lines) != 0: 
+        if len(lines) != 0: # the is for the old users.
             for i in range(m, 0):
-                line.append(lines[i].rstrip('\n').split(" | "))
+                line.append(lines[i].rstrip('\n').split(" | ")) # adding contents of the txt file to list line.
+                # .rstrip() removes all '\n' character in the file.
+                # .split() will separate the values whenever it encounters a '|' character.
+            # creating table of records using tabulate function/module.
             t = tabulate(line, headers="firstrow", tablefmt="fancy_grid", stralign="center", numalign="center", missingval=" ", maxcolwidths=15)
         # if the txt file is empty or there's no record yet. 
-        else:
-            line.append([' ', ' ', 'No Record Yet', ' ', ' '])
+        else: # this is for New users, since their txt file has no record yet.
+            line.append([' ', ' ', 'No Record Yet', ' ', ' ']) # this will be the contents of the table for new users.
+            # creating table of records using tabulate function/module.
             t = (tabulate(line, headers="firstrow", tablefmt="fancy_grid", stralign="center", missingval=" "))
 
+        # adding tables to list y.
         y.append(t)
-        q = []
+        q = [] # this will store the contents of the txt file with the table design.
         q.extend(y[0].split("\n")) # this will store the tabulated values separated line by line.
 
         # to print tabulated datas.
         for i in range (0, len(q)):
-            print(f"{Colors().cyan}\t\t{q[i]}")
-
+            print(f"{Colors().cyan}\t\t{q[i]}") # Colors().cyan changes the color of text to cyan.
 
         # printing user choices in red/pink color.
-        if n == 1:
-            print(f"{Colors().red} \n\t\t[1] Add Record\t\t\t[2] View All Records\t\t\t[0] Exit")
-        else:
-            print(f"{Colors().red} \n\t\t[1] Add Record {tab} [0] Exit")
+        if n == 1: # printing footer for the homepage
+            print(f"{Colors().red} \n\t\t[1] Add Record\t\t\t[2] View All Records\t\t\t[0] Exit") # Colors().red changes the text color to red.
+        else: # printing footer for the view all record page.
+            print(f"{Colors().red} \n\t\t[1] Add Record {tab} [0] Exit") # Colors().red changes the text color to red.
 
-        print(f"{Colors().cyan} \n{115*'▀'} \n")
+        print(f"{Colors().cyan} \n{115*'▀'} \n") # printing a color cyan line. 
 
         # Directing the program to Record_ch.menu()
         Record_ch.menu_c(self.un)
 
-
-class NewUser_data(New_user):
+# Class for the data of new users.
+class NewUser_data(New_user): # inheriting the attributes and methods of class New_user.
+    
+    # explicitly inheriting the attributes of New user.
     def __init__(self, un, pw):
         super().__init__(un, pw)
 
+    # this function will ask the user about their personal datas.
     def user_personal_info(self):
-        print(homepage_h)
+        print(homepage_h) # printing header, this is from design.py
 
+        # prompting user to enter ther corresponding datas.
         weight = float(input(f"\n\t\t{Colors().cyan}Weight [kg]:{Colors().red}\t"))
         height = float(input(f"\t\t{Colors().cyan}Height [cm]:{Colors().red}\t"))
         age = int(input(f"\t\t{Colors().cyan}Age:\t {Colors().red}"))
@@ -130,11 +138,14 @@ class NewUser_data(New_user):
         actLevel = str(input(f"\t\t{Colors().cyan}Activity Level:\t {Colors().red}"))
         
         # calculating bmr based on user's sex.
-        bmr = calc_bmr(weight, height, sex, age)
-        calories = calc_daily_calories(actLevel, bmr)
+        # Directing user entered value of weight, height, sex, age to function calc_bmr(). 
+        bmr = calc_bmr(weight, height, sex, age) # calc_bmr is in the calc.py. the returned value from this function will be stored in bmr variable.
+        # calculating the calories using the function calc_daily_calories().
+        calories = calc_daily_calories(actLevel, bmr) # the returned value from this function will be stored in the variable calories.
         
-        # create txt file which will store persinal infos of user.
-        with open(f"{self.un}-personal-info.txt", "a") as file:
+        # adding user's personal datas inside the user's txt file.
+        with open(f"{self.un}-personal-info.txt", "a") as file: # it is in append mode since we want to add/write data into the txt file.
+             # adding weight, height, age, sex, activity level, Bmr, and required calories inside the txt file.
             file.write(f"""Weight:\t{weight}
             \rHeight:\t{height}
             \rAge:\t{age}
